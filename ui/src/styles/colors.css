@@ -1,0 +1,44 @@
+:root {
+	/* Universal */
+	--placeholder: #696969;
+    --backround-light: white;
+	--border-light: #D9D9D9;
+	--title-light: #0F0F0F;
+	--text-light: #404040;
+	--accent-light: black;
+	--error-light: #E10000;
+	--contrast-light: white;
+
+    --backround-dark: #09090B;
+	--border-dark: #212121;
+	--title-dark: white;
+	--text-dark: #F3F3F3;
+	--accent-dark: white;
+	--error-dark: #8D0000;
+	--contrast-dark: black;
+
+	/* Theme changed */
+    --backround: white;
+	--border: #D9D9D9;
+	--title: #0F0F0F;
+	--text: #404040;
+	--accent: black;
+	--error: #E10000;
+	--contrast: white;
+}
+
+.dark {
+	/* Theme changed */
+    --backround: #09090B;
+	--border: #212121;
+	--title: white;
+	--text: #F3F3F3;
+	--accent: white;
+	--error: #8D0000;
+	--contrast: black;
+}
+
+body {
+    background: var(--backround);
+}
+

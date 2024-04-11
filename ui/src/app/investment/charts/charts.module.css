@@ -1,0 +1,9 @@
+.charts {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .charts {
+    flex-direction: row;
+  }
+}

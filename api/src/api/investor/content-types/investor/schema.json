@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investors",
+  "info": {
+    "singularName": "investor",
+    "pluralName": "investors",
+    "displayName": "Investor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "inn": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string"
+    },
+    "investments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::investment.investment",
+      "mappedBy": "investor"
+    }
+  }
+}

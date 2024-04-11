@@ -1,0 +1,14 @@
+.input {
+    display: none;
+}
+
+.label {
+    user-select: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checked {
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
+}

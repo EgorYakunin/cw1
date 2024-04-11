@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investments",
+  "info": {
+    "singularName": "investment",
+    "pluralName": "investments",
+    "displayName": "Investment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "occupied",
+        "archived"
+      ],
+      "default": "pending"
+    },
+    "percent": {
+      "type": "integer"
+    },
+    "issue_date": {
+      "type": "date"
+    },
+    "closure_date": {
+      "type": "date"
+    },
+    "investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::investor.investor",
+      "inversedBy": "investments"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "eur",
+        "rub",
+        "usd"
+      ]
+    }
+  }
+}

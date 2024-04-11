@@ -1,0 +1,12 @@
+.header {	
+	padding: 1rem 0;
+    background: #070709;
+    margin-bottom: 3rem;
+	color: var(--text-dark);
+}
+
+.header h2 {
+	color: white;
+	font-weight: normal;
+	font-size: 16px;
+}
